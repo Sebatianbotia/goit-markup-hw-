@@ -51,9 +51,7 @@ h2{
 }
 
 /* header */
-.container{
-    width: 1216px;
-}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -193,7 +191,6 @@ h2{
     display: flex;
     margin-top: 94px;
     flex-direction: column;
-    width: 1173.16px;
     height: 425px;
     margin-bottom: 94px;
 }
@@ -205,12 +202,16 @@ h2{
     line-height: 42px;
     text-align: center;
     margin-bottom: 55px;
+    align-items: center;
+    justify-content: center;
 }
 
 .dedication-images{
     display: flex;
     flex-direction: row;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .workers-section{
@@ -269,12 +270,14 @@ h2{
     font-weight: 700;
     font-size: 26px;
     width: 145px;
-    margin-left: 15px;
+    margin-left: 16px;
     margin-top: 60px;
+    padding-left: 40px;
 }
 
 .footer-info{
-    padding-left: 15px;
+    margin-left: 16px;
+    padding-left: 40px;
 }
 
 .location{
@@ -290,17 +293,12 @@ h2{
 
 /* portafolio */
 
-.main-portafolio{
-    height: 1500px;
-}
 
 .services-portafolio{
     display: flex;
-    width: 1170px;
     height: 1360px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-top: 94px;
     margin-bottom: 82px;
 }
@@ -348,6 +346,7 @@ h2{
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    justify-content: center;
 }
 
 .product{
