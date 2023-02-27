@@ -13,6 +13,7 @@ ul{
     --color-white: #FFFFFF;
     --color-turkey: #2F303A;
     --color-light-grey: #F5F4FA;
+    --color-fondo-2-: #2F303A;
 }
 /* normalizador */
 h1,h2,h3,h4,h5,h6,p{
@@ -114,6 +115,34 @@ h2{
    margin-right: 100px; 
 }
 
+.tel-log{
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    fill: var(--color-grey);
+}
+
+.tel-log:hover{
+    text-decoration: none;
+    fill: var(--blue-color);
+    cursor: pointer;
+}
+
+.mail-log{
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    fill: var(--color-grey);
+
+}
+
+.mail-log:hover{
+    text-decoration: none;
+    fill: var(--blue-color);
+    cursor: pointer;
+}
+
+
 .contact{
     color: var(--color-grey);
     font-weight: 500;
@@ -130,13 +159,23 @@ h2{
 
 /* hero */
 .backgraund-turkey{
-    background-color: var(--color-turkey) ;
+    background-color: rgba(47, 48, 58, 0.9); ;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
+
+.backgraund-turkey{
+    background-image: url(../images/Imagen\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 .tittle{
     color: var(--color-white);
@@ -168,11 +207,26 @@ h2{
     justify-content: center;
 }
 
+.icon-details{
+    width: 70px;
+    height: 70px;
+}
+
+.icon-details-contenedor{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 .details{
     display: flex;
     flex-direction: row;
     width: 1170px;
-    height: 122px;
+    height: auto;
     gap: 30px;
     margin-top: 95px;
 
@@ -209,6 +263,7 @@ h2{
     line-height: 42px;
     text-align: center;
     margin-bottom: 55px;
+    margin-top: 59px;
     align-items: center;
     justify-content: center;
 }
@@ -221,13 +276,71 @@ h2{
     justify-content: center;
 }
 
+.img-dedication-1{
+    background-image: url(../images/imagen1.jpg);
+    width: 373px;
+    height: 323px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dedication-1{
+    color: var(--color-white);
+    width: 373px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8); ;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.img-dedication-2{
+    background-image: url(../images/imagen2.jpg);
+    width: 373px;
+    height: 323px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dedication-2{
+    color: var(--color-white);
+    width: 373px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8); ;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.img-dedication-3{
+    background-image: url(../images/imagen3.jpg);
+    width: 373px;
+    height: 323px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dedication-3{
+    color: var(--color-white);
+    width: 373px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8); ;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
 .workers-section{
     background-color: var(--color-light-grey);
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 648px;
+    height: auto;
     padding-left: 70px;
 }
 
@@ -242,7 +355,7 @@ h2{
 .worker{
     background-color: var(--color-white);
     width: 270px;
-    height: 368px;
+    height: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
@@ -262,13 +375,106 @@ h2{
     line-height: 19px;
 }
 
+.div-workers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 50px;
+    padding-bottom: 20px;   
+    padding-top: 20px;
+}
+
+.worker-redes{
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.worker-redes:hover{
+    background-color: var(--blue-color);
+    cursor: pointer;
+}
+
+.icon-redes {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.icon-redes:hover {
+   fill: var(--color-white);
+}   
+
+.clientes-section{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.contenedor-clientes{
+    width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+.clients-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.li-clients{
+    width: 170px;
+    height: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 7px;
+}
+
+.li-clients:hover{
+    border: 1px solid var(--blue-color);
+    border-radius: 7px; 
+    fill: var(--blue-color);
+    cursor: pointer;
+}
+
+
+.icon-clients{
+    width: 106px;
+    height: 52.83px;
+    fill: #AFB1B8; 
+}
+
+.icon-clients:hover{
+    fill: var(--blue-color);
+}
+
+
+
 /* footer */
 
 .backgraund-turkey-footer{
     background-color: var(--color-turkey) ;
     height: 252px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -283,8 +489,11 @@ h2{
     margin-top: 60px;
 }
 
-.footer-info{
-   
+.contenedor-footer{
+    width: 1200px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
 }
 
 .location{
@@ -297,6 +506,38 @@ h2{
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
 }
+
+.redes{
+    color: var(--color-white);
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-icon{
+    width: 44px;
+    height: 44px;
+    background-color: #434345;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon:hover {
+    background-color: var(--blue-color);
+    cursor: pointer;
+}
+
+.icon{
+    fill: var(--color-white);
+    width: 20px;
+    height: 20px;
+}
+
 
 /* portafolio */
 
