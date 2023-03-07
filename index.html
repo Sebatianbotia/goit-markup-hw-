@@ -28,7 +28,7 @@
             </ul>
             <ul class="header-list">
               <li>
-                <a class="header-item link estudio" href="./index.html">Estudio</a>
+                <a class="header-item link estudio nav-list-item-line" href="./index.html">Estudio</a>
               </li>
               <li>
                 <a class="header-item link" href="./portafolio.html"
@@ -63,9 +63,15 @@
     <main>
       <section class="backgraund-turkey">
         <h1 class="tittle">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="pricipal-button" type="button">
+        <button class="pricipal-button" type="button" data-modal-open>
           Solicite nuestro servicio
         </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close" data-modal-close>X</button>
+          </div>
+        </div>
+        <script src="./js/modal.js"></script>
       </section>
       <section class="details-section">
         <div class="contenedor">
