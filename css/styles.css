@@ -800,15 +800,15 @@ h2{
 }
 
 .Modal-icon{
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     left: 10px;
     position: absolute;
     fill: var(--color-black);
-    top:14px;
+    top:12px;
 }
 
-.input-value:focus-visible + .Modal-icon  {
+.input-value:focus-visible + .Modal-icon {
     fill: var(--blue-color);
 }
 
