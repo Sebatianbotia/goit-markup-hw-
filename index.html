@@ -366,6 +366,17 @@
           </ul>
         </div>
       </div>
+      <div class="suscribe-contain">
+        <form>
+        <input type="email" required name="mail-suscribe" id="mail-suscribe" class="suscribe" placeholder="Correo electronico">
+            <label for="mail-log" class="suscribe-label">Suscribase al boletin informativo 
+              <svg class="suscribe-icon">
+              <use class= "suscribe-icon" href="./symbol-defs.svg#icon-enviar-cono"></use>
+            </svg>
+            <button type="submit" name="" class="pricipal-button-3">Suscríbase</button>
+          </label>
+        </form>
+      </div>
     </footer>
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
@@ -376,31 +387,33 @@
           <form class="modal-form">
             <div class="input-content">
               <input type="text" required name="name" id="name" class="input-value">
-              <label for="name" class="label-name">Nombre</label>
               <svg class="Modal-icon">
-                <use class= "Modal-icon" href="./symbol-defs.svg#icon-persona-negra-18dp-1"></use>
+                <use class= "Modal-icon" href="./symbol-defs.svg#icon-Vector"></use>
               </svg>
+              <label for="name" class="label-name">Nombre</label>
             </div>
-            
+            <div class="input-content">
             <input type="tel" required name="tel-log" id="tel-log" class="input-value">
+            <svg class="Modal-icon">
+              <use class= "Modal-icon" href="./symbol-defs.svg#icon-Vector-1"></use>
+            </svg>
             <label for="tel-log" class="label-tel">Teléfono</label>
-
-            <input type="email" required name="mail-log" id="mail-log" class="input-value">
+            </div>
+            <div class="input-content">
             <label for="mail-log" class="label-mail">E-mail</label>
+            <input type="email" required name="mail-log" id="mail-log" class="input-value">
+            <svg class="Modal-icon">
+              <use class= "Modal-icon" href="./symbol-defs.svg#icon-Vector-2"></use>
+            </svg>
+            </div>
 
-            <input type="text" required name="text" id="comment" placeholder="Introduzca el texto">
-            <label for="comment" class="label-comment">Comentarios  
-              <textarea class="input-comment" name="feedback" rows="4" placeholder="Introduzca el texto"></textarea>
-            </label>
-
+            <input class="input-comment" type="text" name="text" id="comment" placeholder="Introduzca el texto">
+            <label for="comment" class="label-comment">Comentarios</label>
             <input type="checkbox" required name="checkbox" id="checkbox" class="input-checkbox">
             <label for="checkbox" class="label-checkbox">Estoy de acuerdo con el boletin informativo y acepto los terminos 
               y condiciones</label>
-              <button class="pricipal-button-2" type="button" >
-                enviar
-             </button>
-
-
+              <input type="submit" class="pricipal-button-2" type="button" >
+            </input>
           </form>
         </section>
       </div>
