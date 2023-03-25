@@ -1,0 +1,132 @@
+.border{
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'Raleway';
+    color: $blue-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+
+}
+
+.nav-line::before{
+    content: '';
+    height: 4px;
+    width: 66px;
+    top: 77px;
+    border-radius: 2px;
+    background: $blue-color;
+    display: flex;
+    position: absolute;
+}  
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .header__menu{
+        display: flex;
+        gap: 30px;
+        line-height: 1.1;
+        align-items: center;
+     }
+     .header__list{
+        display: flex;
+        line-height: 1.1;
+        gap: 30px;
+
+        .header__list--item{
+            color: $color-black;  
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            gap: 30px;
+            transition: .2s ease-in; 
+        }
+        
+        .header__list--item:hover {
+        
+            color: $blue-color; 
+            cursor: pointer; 
+        }
+        .estudio{
+            color: $blue-color;
+        }
+        
+        .portafolio{
+            color: $blue-color;
+        }
+        
+    }
+
+    .header__contacts{
+        display: flex;
+        line-height: 1.1;
+        gap: 30px;
+        margin-right: 100px; 
+
+        .header__contacts--contact{
+            color: $color-grey;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            transition: .2s ease-in; 
+        }
+
+        .header__contacts--contact:hover{
+            text-decoration: none;
+            color: $blue-color;
+
+            
+        }
+        .mail-log{
+            display: inline-block;
+            width: 16px;
+            height: 12px;
+            fill: $color-grey;
+            position: absolute;
+            right: 140px;
+            top: 6px;
+            transition: .2s ease-in; 
+
+        }
+        .header__contacts--contact:hover + .mail-log {
+            text-decoration: none;
+            fill: $blue-color;
+        }
+        
+        
+        .tel-log{
+            display: inline-block;
+            width: 10px;
+            height: 16px;
+            fill: $color-grey;
+            position: absolute;
+            right: 117px;
+            transition: .2s ease-in; 
+        }
+        .header__contacts--contact:hover + .tel-log {
+            text-decoration: none;
+            fill: $blue-color;
+        }
+        
+     }
+}
+
+ 
+
+
+
+
+
+
+
+
+
+

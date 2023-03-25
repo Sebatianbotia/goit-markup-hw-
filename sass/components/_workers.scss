@@ -1,0 +1,106 @@
+.workers{
+    background-color: $color-light-grey;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-left: 70px;
+
+    .workers__tittle{
+    
+        color: $color-black;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 55px;
+        margin-top: 59px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .workers__list{
+        display: flex;
+        width: 1177px;
+        flex-direction: row;
+        gap: 37px;
+        padding-left: 0;
+
+        .workers__card{
+            background-color: $color-white;
+            width: 270px;
+            height: auto;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            text-align: center;
+            transition: transform 0.2s ease-in, box-shadow 0.2s ease-in ; 
+
+            .workers__card--name{
+                color: $color-black;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 36px;
+                margin-top: 30px;
+            }
+            
+            .definition{
+                color: $color-grey;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            
+            .workers__card--div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 80%;
+                padding-left: 50px;
+                padding-bottom: 20px;   
+                padding-top: 20px;
+            }
+            
+            .workers__card--redes{
+                width: 44px;
+                height: 44px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .2s ease-in; 
+            }
+            
+            .workers__card--redes:hover{
+                background-color: $blue-color;
+                cursor: pointer;
+            }
+            
+            .workers__card--icon {
+                width: 20px;
+                height: 20px;
+                fill: #AFB1B8;
+                transition: .2s ease-in; 
+            }
+            
+            .workers__card--icon:hover {
+               fill: $color-white;
+            }   
+        
+        }
+        
+        .workers__card:hover{
+            transform: scale(1.01);
+            -webkit-box-shadow: 4px 6px 13px 0px rgba(0,0,0,0.21);
+            -moz-box-shadow: 4px 6px 13px 0px rgba(0,0,0,0.21);
+            box-shadow: 4px 6px 13px 0px rgba(0,0,0,0.21);
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
