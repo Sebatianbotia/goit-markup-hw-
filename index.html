@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="border">
-      <div class="contenedor">
+      <div class="header-content">
         <section class="header">
           <nav class="header__menu">
             <ul>
@@ -58,8 +58,29 @@
             </li>
               
           </ul>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         </section>
       </div>
+
+      
     </header>
 
     <main>
@@ -72,8 +93,8 @@
       <section class="det-section">
         <div class="contenedor">
           <ul class="det-section__details">
-            <li>
-              <div class="det-section__icon-content">
+            <li class="det-section__li">
+            <div class="det-section__icon-content">
                 <svg class="det-section__icon">
                   <use href="./symbol-defs.svg#icon-antena-1"></use>
                 </svg>
@@ -85,8 +106,8 @@
               </p>
             </li>
 
-            <li>
-              <div class="det-section__icon-content">
+            <li class="det-section__li">
+            <div class="det-section__icon-content">
                 <svg class="det-section__icon">
                   <use href="./symbol-defs.svg#icon-reloj-1"></use>
                 </svg>
@@ -98,7 +119,7 @@
                 respetar los plazos acordados.
               </p>
             </li>
-            <li>
+            <li class="det-section__li">
               <div class="det-section__icon-content">
                 <svg class="det-section__icon">
                   <use href="./symbol-defs.svg#icon-diagrama-1"></use>
@@ -110,7 +131,7 @@
                 aplicación de soluciones.
               </p>
             </li>
-            <li>
+            <li class="det-section__li">
               <div class="det-section__icon-content">
                 <svg class="det-section__icon">
                   <use href="./symbol-defs.svg#icon-astronauta-1"></use>
@@ -148,12 +169,18 @@
           <h2 class="workers__tittle">Nuestro Equipo</h2>
           <ul class="workers__list">
             <li class="workers__card">
-              <img
-                src="./images/equipo1.jpg"
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/worker1_1x.jpg 1x, ./images/worker1_2x (1).jpg 2x">
+                <source media="(min-width:768px)" srcset="./images/worker1_1x_tab.jpg 1x, ./images/worker1_2x_tab.jpg 2x">
+                <source media="(max-width:767px)" srcset="./images/worker1_1x_tel.jpg 1x, ./images/worker1_2x_tel.jpg 2x">
+
+              <img class="workers__img"
+                src="./images/worker1_1x.jpg"
                 alt="equipo1"
                 width="270"
-                height="260"
-              />
+                height="260"/>
+              </picture>
+              <div class="workers__card--content">
               <h3 class="workers__card--name">Andrés Cubo</h3>
               <p class="definition">Diseñador de Productos</p>
               <ul class="workers__card--div">
@@ -178,15 +205,21 @@
                   </svg>
                 </li>
               </ul>
+            </div>
             </li>
 
             <li class="workers__card">
-              <img
-                src="./images/equipo2.jpg"
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/worker2_1x.jpg 1x, ./images/worker2_2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="./images/worker2_1x_tab.jpg">
+                <source media="(max-width:767px)" srcset="./images/worker2_1x_tel.jpg 1x, ./images/worker2_2x_tel.jpg 2x">
+
+              <img class="workers__img"
+                src="./images/worker2_1x.jpg"
                 alt="equipo2"
                 width="270"
-                height="260"
-              />
+                height="260"/>
+              </picture>
               <h3 class="workers__card--name">Carla Palacios</h3>
               <p class="definition">Desarrolladora Frontend</p>
               <ul class="workers__card--div">
@@ -213,12 +246,17 @@
               </ul>
             </li>
             <li class="workers__card">
-              <img
-                src="./images/equipo3.jpg"
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/worker3_1x.jpg 1x, ./images/worker3_2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="./images/worker3_1x_tab.jpg 1x, ./images/worker3_2x_tab.jpg">
+                <source media="(max-width:767px)" srcset="./images/worker3_1x_tel.jpg 1x, ./images/worker3_2x_tel.jpg">
+
+              <img class="workers__img"
+                src="./images/worker3_1x.jpg"
                 alt="equipo3"
                 width="270"
-                height="260"
-              />
+                height="260"/>
+              </picture>
               <h3 class="workers__card--name">Mario Dorado</h3>
               <p class="definition">Marketing</p>
               <ul class="workers__card--div">
@@ -245,12 +283,17 @@
               </ul>
             </li>
             <li class="workers__card">
-              <img
-                src="./images/equipo4.jpg"
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/worker4_1x.jpg 1x, ./images/worker4_2x.jpg">
+                <source media="(min-width:768px)" srcset="./images/worker4_1x_tab.jpg 1x, ./images/worker4_2x_tab (1).jpg 2x">
+                <source media="(max-width:767px)" srcset="/images/worker4_1x_tel.jpg 1x, ./images/worker4_2x_tel.jpg 2x">
+
+              <img class="workers__img"
+                src="./images/worker4_1x.jpg"
                 alt="equipo4"
                 width="270"
-                height="260"
-              />
+                height="260"/>
+              </picture>
               <h3 class="workers__card--name">Pablo Mijangos</h3>
               <p class="definition">Diseñador IU</p>
               <ul class="workers__card--div">
@@ -322,7 +365,7 @@
     </main>
     <footer class="backgraund-turkey-footer">
       <div class="footer">
-        <div>
+        <div class="footer__adress-content">
           <a class="footer__logo link" href="#">WebStudio</a>
           <address>
             <ul class="footer__info">
@@ -338,7 +381,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__redes-content">
           <ul>
             <li>
               <p class="footer__redes"><b>ENCUENTRENOS EN</b></p>
@@ -369,7 +412,7 @@
         </div>
       </div>
       <div class="footer-suscribe">
-        <form>
+        <form class="footer-suscribe__form">
         <input type="email" required name="mail-suscribe" id="mail-suscribe" class="footer-suscribe__input" placeholder="Correo electronico">
             <label for="mail-log" class="footer-suscribe__label">Suscribase al boletin informativo 
               <svg class="footer-suscribe__icon">
@@ -420,7 +463,64 @@
         </section>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="mobile-menu__list--item link estudio" href="./index.html">Estudio</a>
+          </li>
+          <li>
+            <a class="mobile-menu__list--item link" href="./portafolio.html"
+              >Portafolio</a
+            >
+          </li>
+          <li><a class="mobile-menu__list--item link" href="#">Contactos</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu__contacts">
+        <li>
+          <a class="mobile-menu__contacts--tel link" href="+525555296000">+52 55 5529 6000</a>
+        </li> 
+        <li>
+            <a class="mobile-menu__contacts--mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+        </li>
+       
+      </ul>
+      <ul class="mobile-menu__redes">
+        <li><a class="link menu__redes--item" href="#">instagram</a></li>
+        <li><a class="link menu__redes--item" href="#">twitter</a></li>
+        <li><a class="link menu__redes--item" href="#">facebook</a></li>
+        <li><a class="link menu__redes--item" href="#">twitter</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
+
 </html>

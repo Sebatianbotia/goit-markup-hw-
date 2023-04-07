@@ -65,7 +65,18 @@
     
 }
 
+@media (min-width: 767px) and (max-width: 1199px){
+    .dedication{
+        display: none;
+    }
+ }
 
+ @media (min-width:470px) and (max-width: 767px) {
+    .dedication{
+        display: none;
+    }
+ 
+    }
 
 
 

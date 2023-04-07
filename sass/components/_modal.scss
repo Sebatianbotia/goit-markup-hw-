@@ -180,3 +180,37 @@
     
 }
 
+@media (min-width:470px) and (max-width: 767px) {
+    .modal {
+        width: 95%;
+        height: 95%;
+    }
+
+    .modal .modal__tittle {
+        font-size: 17px;
+        left: 43px;
+        top: 34px;
+    }
+
+    .modal .modal__form .modal__div .modal__input-content--value {
+        width: 350px;
+    }
+
+    .modal .modal__form .modal__input-comment {
+        width: 350px;
+        height: 80px;
+    }
+
+    .modal .modal__form .modal__label-comment {
+        left: 11.5%;
+    }
+
+    .modal .modal__form .modal__label-checkbox {
+        top: 286px;
+    }
+
+    .modal .modal__form .modal__input-checkbox {
+        top: 289px;
+    }
+}
+

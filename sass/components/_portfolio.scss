@@ -113,9 +113,39 @@
     }
 }
 
+@media (min-width: 767px) and (max-width: 1199px){
+    .portafolio{
+       height: auto;
+ }
+
+ .portafolio .products {
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.portafolio .products .portafolio__card {
+    width: 354px;
+    height: 440px;
+   
+}
 
 
+ .portafolio .products .portafolio__card .portafolio__card--img {
+    width: 354px;
 
+}
+}
+
+@media (min-width:470px) and (max-width: 767px) {
+
+.portafolio .portafolio__buttons {
+    flex-wrap: wrap;
+    padding: 0;
+}
+    .portafolio {
+        height: auto;
+    }
+    }
 
 
 

@@ -24,6 +24,11 @@
     position: absolute;
 }  
 
+.header-content {
+    width: 1200px;
+    justify-content: center;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -119,10 +124,43 @@
      }
 }
 
- 
+ @media (min-width: 767px) and (max-width: 1199px){
+    .header .header__contacts {
+        flex-wrap: wrap;
+        position: relative;
+        left: 10%;
+        gap: 10px;
+    }
+ }
+
+ @media (min-width:470px) and (max-width: 767px) {
+
+    .header {
+        justify-content: space-between;
+        width: 100%;
+
+    }   
+
+    .header-content {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .header .header__contacts{
+      display: none;
+    }
+    
+    .header .header__list {
+        display: none;
+    }
 
 
 
+
+  }
+
+
+  
 
 
 

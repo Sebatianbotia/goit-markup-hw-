@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="border">
-      <div class="contenedor">
+      <div class="header-content">
         <section class="header">
           <nav class="header__menu">
             <ul>
@@ -58,6 +58,25 @@
             </li>
               
           </ul>
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         </section>
       </div>
     </header>
@@ -78,7 +97,15 @@
           <ul class="products">
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-                <img src="./images/tecnoduck.jpg" alt="computador1" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos1_1x.jpg 1x, /images/pos1_2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="./images/pos1_tab1x.jpg 1x, ./images/pos1_tab2x.jpg 2x">
+                  <source media="(max-width:767px)" srcset="./images/pos1_tel1x.jpg 1x, ./images/pos1_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos1_1x.jpg"
+                  alt="equipo4"/>
+                </picture>
                 <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                   para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
               </div>
@@ -87,7 +114,15 @@
             </li>
             <li class="portafolio__card">
             <div class="portafolio__card--img">
-              <img src="./images/poster.jpg" alt="posternba" />
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/pos2_1x.jpg 1x, ./images/pos2_2x.jpg 2x">
+                <source media="(min-width:768px)"  srcset="./images/pos2_tab1x.jpg 1x, ./images/pos2_tab2x.jpg 2x">
+                <source media="(max-width:767px)"  srcset="./images/pos2_tel1x.jpg 1x, ./images/pos2_tel2x.jpg">
+
+              <img class="workers__img"
+                src="./images/pos2_1x.jpg"
+                alt="equipo4"/>
+              </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -97,7 +132,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/restaurante.jpg" alt="restaurante sea food" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos3_1x.jpg 1x, ./images/pos3_2x.jpg">
+                  <source media="(min-width:768px)"  srcset="./images/pos3_tab1x.jpg 1x, ./images/pos3_tab2x.jpg 2x">
+                  <source media="(max-width:767px)"  srcset="./images/pos3_tel1x.jpg 1x, ./images/pos3_tel2x.jpg">
+  
+                <img class="workers__img"
+                  src="./images/pos3_1x.jpg"
+                  alt="equipo4"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -106,7 +149,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/proyectoprime.jpg" alt="audifonos" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos4_1x.jpg 1x, ./images/pos4_2x.jpg 2x">
+                  <source media="(min-width:768px)"  srcset="./images/pos4_tab1x.jpg 1x, ./images/pos4_tab2x.jpg 2x">
+                  <source media="(max-width:767px)"  srcset="./images/pos4_tel1x.jpg 1x, ./images/pos4_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos4_1x.jpg"
+                  alt="equipo4"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -115,7 +166,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/proyectocajas.jpg" alt="cajas" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos5_1x.jpg 1x, ./images/pos5_2x.jpg 2x">
+                  <source media="(min-width:768px)"  srcset="./images/pos5_tab1x.jpg 1x, ./images/pos5_tab2x.jpg 2x">
+                  <source media="(max-width:767px)"  srcset="./images/pos5_tel1x.jpg 1x, ./images/pos5_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos5_1x.jpg"
+                  alt="equipo5"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -124,7 +183,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/computador1.jpg" alt="computador2" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos6_1x.jpg 1x, ./images/pos6_2x.jpg 2x">
+                  <source media="(min-width:768px)"  srcset="./images/pos6_tab1x.jpg 1x, ./images/pos6_tab2x.jpg">
+                  <source media="(max-width:767px)"  srcset="./images/pos6_tel1x.jpg 1x, ./images/pos6_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos6_1x.jpg"
+                  alt="equipo6"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -133,7 +200,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/edicionlimitada.jpg" alt="libro" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos7_1x.jpg 1x, ./images/pos7_2x.jpg">
+                  <source media="(min-width:768px)"  srcset="./images/pos7_tab1x.jpg 1x, ./images/pos7_tab2x.jpg">
+                  <source media="(max-width:767px)"  srcset="./images/pos7_tel1x.jpg 1x, ./images/pos7_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos7_1x.jpg"
+                  alt="equipo7"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -142,7 +217,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/proyectoLAB.jpg" alt="etiqueta" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos8_1x.jpg 1x, ./images/pos8_2x.jpg">
+                  <source media="(min-width:768px)"  srcset="./images/pos8_tab1x.jpg 1x, ./images/pos8_tab2x.jpg">
+                  <source media="(max-width:767px)"  srcset="./images/pos8_tel1x.jpg 1x, ./images/pos8_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos8_1x.jpg"
+                  alt="equipo8"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -151,7 +234,15 @@
             </li>
             <li class="portafolio__card">
               <div class="portafolio__card--img">
-              <img src="./images/computador2.jpg" alt="computador3" />
+                <picture>
+                  <source media="(min-width:1200px)" srcset="./images/pos9_1x.jpg 1x, ./images/pos9_2x.jpg">
+                  <source media="(min-width:768px)"  srcset="./images/pos9_tab1x.jpg 1x, ./images/pos9_tab2x.jpg">
+                  <source media="(max-width:767px)"  srcset="./images/pos9_tel1x.jpg 1x, ./images/pos9_tel2x.jpg 2x">
+  
+                <img class="workers__img"
+                  src="./images/pos9_1x.jpg"
+                  alt="equipo9"/>
+                </picture>
               <div class="portafolio__card--paragraph-div"> <p class="portafolio__card--paragraph">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma 
                 para el espionaje digital y los ataques a los servidores seguros de la competencia.</p> </div>
             </div>
@@ -164,7 +255,7 @@
     </main>
     <footer class="backgraund-turkey-footer">
       <div class="footer">
-        <div>
+        <div class="footer__adress-content">
           <a class="footer__logo link" href="#">WebStudio</a>
           <address>
             <ul class="footer__info">
@@ -180,7 +271,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__redes-content">
           <ul>
             <li>
               <p class="footer__redes"><b>ENCUENTRENOS EN</b></p>
@@ -222,5 +313,61 @@
         </form>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="mobile-menu__list--item link estudio" href="./index.html">Estudio</a>
+          </li>
+          <li>
+            <a class="mobile-menu__list--item link" href="./portafolio.html"
+              >Portafolio</a
+            >
+          </li>
+          <li><a class="mobile-menu__list--item link" href="#">Contactos</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu__contacts">
+        <li>
+          <a class="mobile-menu__contacts--tel link" href="+525555296000">+52 55 5529 6000</a>
+        </li> 
+        <li>
+            <a class="mobile-menu__contacts--mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+        </li>
+       
+      </ul>
+      <ul class="mobile-menu__redes">
+        <li><a class="link menu__redes--item" href="#">instagram</a></li>
+        <li><a class="link menu__redes--item" href="#">twitter</a></li>
+        <li><a class="link menu__redes--item" href="#">facebook</a></li>
+        <li><a class="link menu__redes--item" href="#">twitter</a></li>
+      </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
