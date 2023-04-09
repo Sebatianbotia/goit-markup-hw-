@@ -1023,25 +1023,26 @@ h2 {
   top: 0px;
 }
 
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .modal {
     width: 95%;
-    height: 95%;
+    height: 80%;
   }
   .modal .modal__tittle {
     font-size: 17px;
     left: 43px;
     top: 34px;
+    width: 90%;
   }
   .modal .modal__form .modal__div .modal__input-content--value {
     width: 350px;
   }
   .modal .modal__form .modal__input-comment {
-    width: 350px;
+    width: 90%;
     height: 80px;
   }
   .modal .modal__form .modal__label-comment {
-    left: 11.5%;
+    left: 5%;
   }
   .modal .modal__form .modal__label-checkbox {
     top: 286px;
