@@ -136,7 +136,7 @@
 }
 }
 
-@media (min-width:470px) and (max-width: 767px) {
+@media (max-width: 481px) {
 
 .portafolio .portafolio__buttons {
     flex-wrap: wrap;
@@ -145,8 +145,11 @@
     .portafolio {
         height: auto;
     }
-    }
-
+    
+.portafolio .products .portafolio__card {
+    width: 95%;
+}
+}
 
 
 

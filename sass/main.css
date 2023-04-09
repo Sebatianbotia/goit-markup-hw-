@@ -170,7 +170,7 @@ h2 {
     gap: 10px;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .header {
     justify-content: space-between;
     width: 100%;
@@ -240,7 +240,7 @@ h2 {
     width: 360px;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .backgraund-turkey {
     height: 400px;
     background-size: 100% 400px;
@@ -255,7 +255,7 @@ h2 {
     background-image: url(/images/Principalimage_1x_Tab.jpg);
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .backgraund-turkey {
     background-image: url(/images/Principalimage_1x_Tel.jpg);
   }
@@ -323,7 +323,7 @@ h2 {
     display: none;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .dedication {
     display: none;
   }
@@ -436,7 +436,7 @@ h2 {
     width: 100%;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .workers {
     padding-left: 0;
   }
@@ -449,7 +449,7 @@ h2 {
     width: 100%;
   }
   .workers .workers__list {
-    width: 480px;
+    width: 100%;
     height: auto;
     flex-wrap: wrap;
   }
@@ -525,7 +525,7 @@ h2 {
     margin-left: 0;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 480px) {
   .clientes .clientes__content {
     width: 480px;
     margin-left: 0;
@@ -679,7 +679,7 @@ h2 {
     left: 145px;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .backgraund-turkey-footer {
     height: 650px;
     width: 100%;
@@ -690,7 +690,7 @@ h2 {
   .footer__adress-content {
     position: absolute;
     bottom: 150px;
-    left: 20%;
+    left: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -702,7 +702,7 @@ h2 {
   .footer__redes-content {
     position: absolute;
     bottom: 10px;
-    left: 25%;
+    left: 6vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -720,16 +720,16 @@ h2 {
     left: -330px;
   }
   .footer-suscribe .footer-suscribe__input {
-    top: 52px;
-    left: -390px;
+    top: 6vh;
+    left: -374px;
   }
   .footer-suscribe .footer-suscribe__button {
     top: 130px;
-    right: 85px;
+    right: 8.5vh;
   }
   .footer-suscribe .footer-suscribe__icon {
     top: 144px;
-    left: 171px;
+    left: 21vh;
   }
 }
 .portafolio {
@@ -852,13 +852,16 @@ h2 {
     width: 354px;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .portafolio .portafolio__buttons {
     flex-wrap: wrap;
     padding: 0;
   }
   .portafolio {
     height: auto;
+  }
+  .portafolio .products .portafolio__card {
+    width: 95%;
   }
 }
 .backdrop .is-hidden .modal {
@@ -1105,31 +1108,32 @@ h2 {
     width: 354px;
   }
 }
-@media (min-width: 470px) and (max-width: 767px) {
+@media (max-width: 481px) {
   .contenedor {
     width: 100%;
   }
   .det-section .det-section__details {
     justify-content: center;
     flex-wrap: wrap;
-    width: 480px;
+    width: 100%;
     padding: 0;
   }
   .det-section__li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .det-section .det-section__details .det-section__icon-content {
-    width: 450px;
+    width: 95%;
   }
   .det-section .det-section__details .det-section__tittle {
     justify-content: center;
     display: flex;
-    margin-left: 105px;
   }
   .det-section .det-section__details .det-section__paragraph {
-    width: 450px;
+    width: 95%;
   }
 }
 .menu-toggle {
